@@ -34,22 +34,24 @@
 <body>
 
 <nav class="nav">
-  <div>
-    <div class="nav-logo">keep</div>
-    <div class="nav-sub">by Conflux Real Estate</div>
-  </div>
-  <div class="nav-links">
-    <a href="#how">How it works</a>
-    <a href="#calc">Calculator</a>
-    <a href="./faq/">FAQ</a>
-    <a href="tel:6029356585" class="nav-cta">Call us →</a>
+  <div class="nav-inner">
+    <div>
+      <div class="nav-logo">keep</div>
+      <div class="nav-sub">by Conflux Real Estate</div>
+    </div>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#calc">Calculator</a>
+      <a href="./faq/">FAQ</a>
+      <a href="tel:6029356585" class="nav-cta">Call us &rarr;</a>
+    </div>
   </div>
 </nav>
 
-<section style="padding: 80px 48px 72px; max-width: 740px;">
-  <h1 style="font-family: 'Fraunces', serif; font-size: 50px; font-weight: 400; line-height: 1.1; letter-spacing: -0.03em; color: #1A1A18; margin-bottom: 20px;">Buy your new construction home.<br><em style="font-style: italic; color: #2D6A4F;">Keep the commission.</em></h1>
-  <p style="font-size: 17px; color: #6A6A68; line-height: 1.6; max-width: 520px; margin-bottom: 32px;">Most Phoenix new home buyers leave $10,000–$20,000 on the table at closing. We give it back — no catch, just a better way to work with a broker.</p>
-  <button onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})" style="display: inline-flex; align-items: center; gap: 8px; background: #2D6A4F; color: #F9F7F4; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; padding: 13px 24px; border: none; cursor: pointer; letter-spacing: 0.01em;">See how much you'd keep →</button>
+<section class="hero">
+  <h1>Buy your new construction home.<br><em>Keep the commission.</em></h1>
+  <p>Most Phoenix new home buyers leave $10,000&ndash;$20,000 on the table at closing. We give it back &mdash; no catch, just a better way to work with a broker.</p>
+  <button class="hero-cta" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">See how much you'd keep &rarr;</button>
 </section>
 
 <section class="calc-section" id="calc">
@@ -65,7 +67,7 @@
     <div class="comm-row">
       <label>Commission rate</label>
       <input class="comm-input" type="number" id="comm-input" value="3.0" min="0" max="3" step="0.5">
-      <span style="font-size: 13px; color: #6A6A68;">%</span>
+      <span style="font-size:13px;color:#6A6A68">%</span>
     </div>
     <div class="rebate-display">
       <div id="rebate-eligible">
@@ -74,68 +76,76 @@
         <div class="rebate-note">credited at closing</div>
       </div>
       <div class="rebate-ineligible" id="rebate-ineligible">
-        This community may not offer a buyer's commission. <a href="tel:6029356585">Contact us</a> — we'll walk you through your options.
+        This community may not offer a buyer's commission. <a href="tel:6029356585">Contact us</a> &mdash; we'll walk you through your options.
       </div>
     </div>
     <div class="math-line" id="math-line"></div>
   </div>
 </section>
 
-<section style="padding: 72px 48px;" id="how">
-  <h2 style="font-family: 'Fraunces', serif; font-size: 36px; font-weight: 400; letter-spacing: -0.02em; margin-bottom: 48px; color: #1A1A18;">Three steps. No surprises.</h2>
-  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
-    <div>
-      <div style="font-family: 'Fraunces', serif; font-size: 13px; color: #2D6A4F; margin-bottom: 12px;">01</div>
-      <h3 style="font-family: 'Fraunces', serif; font-size: 19px; font-weight: 400; color: #1A1A18; margin-bottom: 10px; letter-spacing: -0.01em;">Find your community</h3>
-      <p style="font-size: 14px; color: #6A6A68; line-height: 1.65;">Browse Phoenix builders and new home communities on your own. When you find one you're interested in, contact keep before your first visit.</p>
-      <div class="step-warn">Contact us before you visit — if you walk into a community without registering first, you lose your rebate. If your community requires in-person registration, we'll tell you exactly what to do.</div>
-    </div>
-    <div>
-      <div style="font-family: 'Fraunces', serif; font-size: 13px; color: #2D6A4F; margin-bottom: 12px;">02</div>
-      <h3 style="font-family: 'Fraunces', serif; font-size: 19px; font-weight: 400; color: #1A1A18; margin-bottom: 10px; letter-spacing: -0.01em;">We handle everything</h3>
-      <p style="font-size: 14px; color: #6A6A68; line-height: 1.65;">We register you with the community as your broker of record and guide you through the contract and upgrade process from our Arizona office. Our agents won't join you on house tours — but we're with you for every decision that matters.</p>
-    </div>
-    <div>
-      <div style="font-family: 'Fraunces', serif; font-size: 13px; color: #2D6A4F; margin-bottom: 12px;">03</div>
-      <h3 style="font-family: 'Fraunces', serif; font-size: 19px; font-weight: 400; color: #1A1A18; margin-bottom: 10px; letter-spacing: -0.01em;">Keep the money</h3>
-      <p style="font-size: 14px; color: #6A6A68; line-height: 1.65;">Your rebate is credited at closing. No checks to chase, no follow-up required. Your exact rebate depends on the final commission your builder offers — the calculator above gives you a good estimate.</p>
+<section id="how" style="padding:clamp(48px,7vw,80px) var(--pad);background:var(--bg);">
+  <div style="max-width:var(--max-w);margin:0 auto;">
+    <h2 style="font-family:'Fraunces',serif;font-size:clamp(28px,3vw,38px);font-weight:400;letter-spacing:-0.02em;margin-bottom:48px;color:var(--text);">Three steps. No surprises.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Find your community</h3>
+        <p>Browse Phoenix builders and new home communities on your own. When you find one you're interested in, contact keep before your first visit.</p>
+        <div class="step-warn">Contact us before you visit &mdash; if you walk into a community without registering first, you lose your rebate. If your community requires in-person registration, we'll tell you exactly what to do.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>We handle everything</h3>
+        <p>We register you with the community as your broker of record and guide you through the contract and upgrade process from our Arizona office. Our agents won't join you on house tours &mdash; but we're with you for every decision that matters.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Keep the money</h3>
+        <p>Your rebate is credited at closing. No checks to chase, no follow-up required. Your exact rebate depends on the final commission your builder offers &mdash; the calculator above gives you a good estimate.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <div class="trust-section">
-  <div class="trust-block" style="flex: 0 0 auto;">
-    <div class="stars">★★★★★</div>
-    <div class="trust-ratings"><strong>5.0</strong> on Google &nbsp;·&nbsp; <strong>4.9</strong> on Zillow</div>
-  </div>
-  <div class="trust-divider"></div>
-  <div class="trust-block">
-    <div class="trust-stat">$850M+</div>
-    <div class="trust-stat-label">in residential real estate transactions across the team's careers</div>
-  </div>
-  <div class="trust-divider"></div>
-  <div class="trust-block">
-    <div class="trust-text">Our team has developed new home communities, built and run builder sales programs, and represented Phoenix new home buyers through hundreds of transactions. New construction is all we do.</div>
+  <div class="trust-inner">
+    <div class="trust-block" style="flex:0 0 auto;">
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="trust-ratings"><strong>5.0</strong> on Google &nbsp;&middot;&nbsp; <strong>4.9</strong> on Zillow</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-block">
+      <div class="trust-stat">$850M+</div>
+      <div class="trust-stat-label">in residential real estate transactions across the team's careers</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-block">
+      <div class="trust-text">Our team has developed new home communities, built and run builder sales programs, and represented Phoenix new home buyers through hundreds of transactions. New construction is all we do.</div>
+    </div>
   </div>
 </div>
 
 <section class="cta-section">
-  <h2>Found a community?<br><em>Call us first.</em></h2>
-  <p class="cta-sub">We want to do the work. You just have to talk to us. No forms, no scheduling links, no runaround.</p>
-  <div class="contact-block">
-    <div>
-      <div class="contact-item"><a href="tel:6029356585">602-935-6585</a></div>
-      <div class="contact-name">Sagar Patel · <a href="tel:6029356585">call</a> or <a href="sms:6029356585">text</a></div>
-    </div>
-    <div>
-      <div class="contact-item"><a href="#" data-email data-email-show>sagar@buywithkeep.com</a></div>
-      <div class="contact-name">we reply fast</div>
+  <div class="cta-section-inner">
+    <h2>Found a community?<br><em>Call us first.</em></h2>
+    <p class="cta-sub">We want to do the work. You just have to talk to us. No forms, no scheduling links, no runaround.</p>
+    <div class="contact-block">
+      <div>
+        <div class="contact-item"><a href="tel:6029356585">602-935-6585</a></div>
+        <div class="contact-name">Sagar Patel &middot; <a href="tel:6029356585">call</a> or <a href="sms:6029356585">text</a></div>
+      </div>
+      <div>
+        <div class="contact-item"><a href="#" data-email data-email-show>sagar@buywithkeep.com</a></div>
+        <div class="contact-name">we reply fast</div>
+      </div>
     </div>
   </div>
 </section>
 
 <div class="footer">
-  <p>keep is a service of Conflux Real Estate, LLC — Licensed Arizona Real Estate Brokerage. Rebate subject to lender approval. Terms apply. &nbsp;<a href="./faq/">Full terms & FAQ →</a></p>
+  <div class="footer-inner">
+    <p>keep is a service of Conflux Real Estate, LLC &mdash; Licensed Arizona Real Estate Brokerage. Rebate subject to lender approval. Terms apply. &nbsp;<a href="./faq/">Full terms &amp; FAQ &rarr;</a></p>
+  </div>
 </div>
 
 <script src="./assets/js/calculator.js"></script>
