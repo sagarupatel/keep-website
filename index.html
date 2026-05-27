@@ -10,8 +10,8 @@
   <meta property="og:description" content="We give back up to 2/3 of the buyer's commission at closing. No catch.">
   <meta property="og:url" content="https://buywithkeep.com/">
   <meta property="og:type" content="website">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,185 +33,112 @@
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="nav">
-    <a href="./" class="nav-brand">
-      <span class="nav-logo">keep</span>
-      <span class="nav-sub">A service of Conflux Real Estate, Licensed Arizona Brokerage</span>
-    </a>
-    <ul class="nav-links">
-      <li class="hide-mobile"><a href="#how">How It Works</a></li>
-      <li class="hide-mobile"><a href="faq/">FAQ</a></li>
-      <li class="hide-mobile"><a href="communities/">Communities</a></li>
-    </ul>
-  </nav>
+<nav class="nav">
+  <div>
+    <div class="nav-logo">keep</div>
+    <div class="nav-sub">by Conflux Real Estate</div>
+  </div>
+  <div class="nav-links">
+    <a href="#how">How it works</a>
+    <a href="#calc">Calculator</a>
+    <a href="./faq/">FAQ</a>
+    <a href="tel:6029356585" class="nav-cta">Call us →</a>
+  </div>
+</nav>
 
-  <!-- Hero -->
-  <section style="padding: 100px 24px 80px;">
-    <div class="container-narrow">
-      <h1 style="font-size: 50px; margin-bottom: 24px;">
-        Buy your new home.<br>
-        <em style="color: var(--green); font-style: italic;">Keep the commission.</em>
-      </h1>
-      <p style="font-size: 18px; color: var(--text-muted); max-width: 540px; margin-bottom: 36px; line-height: 1.6;">
-        Phoenix buyers leave $10,000–$20,000 on the table when they close. We give it back.
-      </p>
-      <a href="#calc" class="btn-primary">See how much you'd keep ↓</a>
-    </div>
-  </section>
+<section style="padding: 80px 48px 72px; max-width: 740px;">
+  <h1 style="font-family: 'Fraunces', serif; font-size: 50px; font-weight: 400; line-height: 1.1; letter-spacing: -0.03em; color: #1A1A18; margin-bottom: 20px;">Buy your new construction home.<br><em style="font-style: italic; color: #2D6A4F;">Keep the commission.</em></h1>
+  <p style="font-size: 17px; color: #6A6A68; line-height: 1.6; max-width: 520px; margin-bottom: 32px;">Most Phoenix new home buyers leave $10,000–$20,000 on the table at closing. We give it back — no catch, just a better way to work with a broker.</p>
+  <button onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})" style="display: inline-flex; align-items: center; gap: 8px; background: #2D6A4F; color: #F9F7F4; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; padding: 13px 24px; border: none; cursor: pointer; letter-spacing: 0.01em;">See how much you'd keep →</button>
+</section>
 
-  <!-- Calculator -->
-  <section id="calc" class="calc-section dot-grid">
-    <div class="container-narrow">
-      <p class="calc-label">Your rebate, calculated.</p>
-      <div class="calc-controls">
-        <div class="calc-row">
-          <label for="price-slider">Home price</label>
-          <div class="price-display" id="price-display">$600,000</div>
-          <input type="range" id="price-slider" min="300000" max="1500000" step="5000" value="600000">
-          <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--text-subtle); margin-top:4px;">
-            <span>$300K</span><span>$1.5M</span>
-          </div>
-        </div>
-        <div class="calc-row">
-          <label for="comm-input">Builder commission rate (%)</label>
-          <div class="comm-input-row">
-            <input type="number" id="comm-input" class="comm-input" min="0" max="3" step="0.5" value="3.0">
-            <span style="font-size:14px; color:var(--text-subtle);">% (0–3%, 0.5% steps)</span>
-          </div>
-        </div>
+<section class="calc-section" id="calc">
+  <div class="calc-inner">
+    <div class="section-label">Your rebate</div>
+    <div class="slider-row">
+      <div class="slider-label">
+        <span>Home price</span>
+        <strong id="price-display">$650,000</strong>
       </div>
-
-      <div class="calc-result">
-        <div id="rebate-eligible">
-          <p style="font-size:13px; color:var(--text-subtle); margin-bottom:6px;">You'd keep</p>
-          <div class="rebate-amount" id="rebate-display"></div>
-          <p class="math-line" id="math-line"></p>
-        </div>
-        <div id="rebate-ineligible" style="display:none;">
-          <p class="rebate-ineligible">
-            A 0% commission rate means the builder isn't offering a buyer's broker commission — keep would not be able to facilitate a rebate on this purchase. <a href="tel:6029356585">Call us</a> to discuss your options.
-          </p>
-        </div>
-      </div>
-      <p style="margin-top:32px; font-size:14px; color:var(--text-muted);">
-        Ready to get started? <a href="#how" style="color:var(--green);">Here's how. ↓</a>
-      </p>
+      <input type="range" id="price-slider" min="300000" max="1500000" step="10000" value="650000">
     </div>
-  </section>
-
-  <!-- How it works -->
-  <section id="how">
-    <div class="container">
-      <h2 style="font-size:36px; margin-bottom:56px;">Three steps. No surprises.</h2>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:40px;">
-
-        <div>
-          <p style="font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-subtle); margin-bottom:12px;">01</p>
-          <h3 style="font-size:20px; margin-bottom:12px;">Find your community</h3>
-          <p style="font-size:14px; color:var(--text-muted); line-height:1.7;">
-            Browse Phoenix builders and new home communities on your own. When you find one you're interested in, <a href="tel:6029356585" style="color:var(--green);">contact keep</a> before your first visit.
-          </p>
-          <div class="callout-warning" style="margin-top:16px;">
-            <strong>Why this matters:</strong> If you visit a community before we register you as your broker, you lose your rebate. <a href="tel:6029356585" style="color:var(--green);">One call</a> protects it. Takes ten minutes.
-          </div>
-        </div>
-
-        <div>
-          <p style="font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-subtle); margin-bottom:12px;">02</p>
-          <h3 style="font-size:20px; margin-bottom:12px;">We handle everything</h3>
-          <p style="font-size:14px; color:var(--text-muted); line-height:1.7;">
-            We register you with the community as your broker of record, guide you through the contract and upgrade process, and stay with you through closing. You don't have to figure out how any of it works — that's our job.
-          </p>
-        </div>
-
-        <div>
-          <p style="font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-subtle); margin-bottom:12px;">03</p>
-          <h3 style="font-size:20px; margin-bottom:12px;">Keep the money</h3>
-          <p style="font-size:14px; color:var(--text-muted); line-height:1.7;">
-            Your rebate is credited at closing. No checks to chase, no follow-up required.
-          </p>
-        </div>
-
+    <div class="comm-row">
+      <label>Commission rate</label>
+      <input class="comm-input" type="number" id="comm-input" value="3.0" min="0" max="3" step="0.5">
+      <span style="font-size: 13px; color: #6A6A68;">%</span>
+    </div>
+    <div class="rebate-display">
+      <div id="rebate-eligible">
+        <div class="rebate-label">You'd keep</div>
+        <div class="rebate-amount" id="rebate-display">$14,250</div>
+        <div class="rebate-note">credited at closing</div>
+      </div>
+      <div class="rebate-ineligible" id="rebate-ineligible">
+        This community may not offer a buyer's commission. <a href="tel:6029356585">Contact us</a> — we'll walk you through your options.
       </div>
     </div>
-  </section>
+    <div class="math-line" id="math-line"></div>
+  </div>
+</section>
 
-  <!-- Trust block -->
-  <section style="padding: 60px 24px; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border);">
-    <div class="container">
-      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0;">
-
-        <div style="padding: 0 40px 0 0; flex-shrink:0;">
-          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-            <span style="color:var(--green); font-size:18px; letter-spacing:2px;">★★★★★</span>
-          </div>
-          <p style="font-size:13px; color:var(--text-muted);">
-            <strong style="color:var(--text);">5.0</strong> on Google &nbsp;·&nbsp; <strong style="color:var(--text);">4.9</strong> on Zillow
-          </p>
-        </div>
-
-        <div style="width:0.5px; background:var(--border); height:48px; margin: 0 40px; flex-shrink:0;"></div>
-
-        <div style="padding: 0 40px 0 0; flex-shrink:0;">
-          <p style="font-family:'Fraunces',serif; font-size:28px; color:var(--text); line-height:1;">$850M+</p>
-          <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">in new construction transactions</p>
-        </div>
-
-        <div style="width:0.5px; background:var(--border); height:48px; margin: 0 40px; flex-shrink:0;"></div>
-
-        <div style="flex:1; min-width:200px;">
-          <p style="font-size:14px; color:var(--text-muted); line-height:1.6;">
-            Our team has worked on $850M+ in new home transactions across Phoenix. We know how builders structure contracts, where buyers leave money on the table, and how to make sure you don't.
-          </p>
-        </div>
-
-      </div>
+<section style="padding: 72px 48px;" id="how">
+  <h2 style="font-family: 'Fraunces', serif; font-size: 36px; font-weight: 400; letter-spacing: -0.02em; margin-bottom: 48px; color: #1A1A18;">Three steps. No surprises.</h2>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+    <div>
+      <div style="font-family: 'Fraunces', serif; font-size: 13px; color: #2D6A4F; margin-bottom: 12px;">01</div>
+      <h3 style="font-family: 'Fraunces', serif; font-size: 19px; font-weight: 400; color: #1A1A18; margin-bottom: 10px; letter-spacing: -0.01em;">Find your community</h3>
+      <p style="font-size: 14px; color: #6A6A68; line-height: 1.65;">Browse Phoenix builders and new home communities on your own. When you find one you're interested in, contact keep before your first visit.</p>
+      <div class="step-warn">Contact us before you visit — if you walk into a community without registering first, you lose your rebate. If your community requires in-person registration, we'll tell you exactly what to do.</div>
     </div>
-  </section>
-
-  <!-- Dark CTA -->
-  <section class="section-dark">
-    <div class="container-narrow">
-      <h2 style="font-size:36px; margin-bottom:16px;">
-        Found a community?<br>
-        <em style="color:var(--green-light); font-style:italic;">Call us first.</em>
-      </h2>
-      <p style="color:rgba(255,255,255,0.6); font-size:15px; max-width:480px; line-height:1.7; margin-bottom:8px;">
-        We want to do the work. You just have to talk to us.
-      </p>
-      <p style="color:rgba(255,255,255,0.6); font-size:15px; max-width:480px; line-height:1.7;">
-        No forms. No scheduling links. No runaround. <a href="tel:6029356585" style="color:rgba(255,255,255,0.9);">Call or text Sagar directly</a> — he'll pick up or get back to you fast.
-      </p>
-      <div class="contact-block">
-        <div class="contact-line">
-          <span style="color:rgba(255,255,255,0.4); font-size:12px; width:40px;">CALL</span>
-          <a href="tel:6029356585" style="font-size:18px; font-weight:500;">602-935-6585</a>
-        </div>
-        <div class="contact-line">
-          <span style="color:rgba(255,255,255,0.4); font-size:12px; width:40px;">TEXT</span>
-          <a href="sms:6029356585" style="font-size:18px; font-weight:500;">602-935-6585</a>
-        </div>
-        <div class="contact-line">
-          <span style="color:rgba(255,255,255,0.4); font-size:12px; width:40px;">EMAIL</span>
-          <a href="#" data-email data-email-show style="font-size:15px;"></a>
-        </div>
-      </div>
-      <p style="margin-top:20px; font-size:13px; color:rgba(255,255,255,0.35);">Sagar Patel, keep / Conflux Real Estate</p>
+    <div>
+      <div style="font-family: 'Fraunces', serif; font-size: 13px; color: #2D6A4F; margin-bottom: 12px;">02</div>
+      <h3 style="font-family: 'Fraunces', serif; font-size: 19px; font-weight: 400; color: #1A1A18; margin-bottom: 10px; letter-spacing: -0.01em;">We handle everything</h3>
+      <p style="font-size: 14px; color: #6A6A68; line-height: 1.65;">We register you with the community as your broker of record and guide you through the contract and upgrade process from our Arizona office. Our agents won't join you on house tours — but we're with you for every decision that matters.</p>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <span>keep is a service of Conflux Real Estate, LLC — Licensed Arizona Real Estate Brokerage. Rebate subject to lender approval. Terms apply.</span>
-      <div class="footer-links">
-        <a href="faq/">Full terms &amp; FAQ →</a>
-      </div>
+    <div>
+      <div style="font-family: 'Fraunces', serif; font-size: 13px; color: #2D6A4F; margin-bottom: 12px;">03</div>
+      <h3 style="font-family: 'Fraunces', serif; font-size: 19px; font-weight: 400; color: #1A1A18; margin-bottom: 10px; letter-spacing: -0.01em;">Keep the money</h3>
+      <p style="font-size: 14px; color: #6A6A68; line-height: 1.65;">Your rebate is credited at closing. No checks to chase, no follow-up required. Your exact rebate depends on the final commission your builder offers — the calculator above gives you a good estimate.</p>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="assets/js/calculator.js"></script>
-  <script src="assets/js/email.js"></script>
+<div class="trust-section">
+  <div class="trust-block" style="flex: 0 0 auto;">
+    <div class="stars">★★★★★</div>
+    <div class="trust-ratings"><strong>5.0</strong> on Google &nbsp;·&nbsp; <strong>4.9</strong> on Zillow</div>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-block">
+    <div class="trust-stat">$850M+</div>
+    <div class="trust-stat-label">in residential real estate transactions across the team's careers</div>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-block">
+    <div class="trust-text">Our team has developed new home communities, built and run builder sales programs, and represented Phoenix new home buyers through hundreds of transactions. New construction is all we do.</div>
+  </div>
+</div>
+
+<section class="cta-section">
+  <h2>Found a community?<br><em>Call us first.</em></h2>
+  <p class="cta-sub">We want to do the work. You just have to talk to us. No forms, no scheduling links, no runaround.</p>
+  <div class="contact-block">
+    <div>
+      <div class="contact-item"><a href="tel:6029356585">602-935-6585</a></div>
+      <div class="contact-name">Sagar Patel · <a href="tel:6029356585">call</a> or <a href="sms:6029356585">text</a></div>
+    </div>
+    <div>
+      <div class="contact-item"><a href="#" data-email data-email-show>sagar@buywithkeep.com</a></div>
+      <div class="contact-name">we reply fast</div>
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  <p>keep is a service of Conflux Real Estate, LLC — Licensed Arizona Real Estate Brokerage. Rebate subject to lender approval. Terms apply. &nbsp;<a href="./faq/">Full terms & FAQ →</a></p>
+</div>
+
+<script src="./assets/js/calculator.js"></script>
+<script src="./assets/js/email.js"></script>
 </body>
 </html>

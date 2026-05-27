@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} | keep</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <link rel="canonical" href="https://buywithkeep.com/articles/{{SLUG}}/">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{TITLE}}",
+    "description": "{{DESCRIPTION}}",
+    "datePublished": "{{DATE}}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "keep by Conflux Real Estate",
+      "url": "https://buywithkeep.com"
+    }
+  }
+  </script>
+  <style>
+    .article-header { padding: 56px 48px 40px; max-width: 740px; margin: 0 auto; }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+    .topic-tag { font-size: 11px; font-weight: 500; background: #EAF3DE; color: #27500A; padding: 4px 10px; border-radius: 3px; letter-spacing: 0.02em; }
+    .article-header h1 { font-family: 'Fraunces', serif; font-size: 40px; font-weight: 400; letter-spacing: -0.03em; color: #1A1A18; line-height: 1.15; margin-bottom: 16px; }
+    .article-deck { font-size: 17px; color: #6A6A68; line-height: 1.6; max-width: 600px; }
+    .article-divider { border: none; border-top: 0.5px solid rgba(26,26,24,0.1); max-width: 644px; margin: 0 auto; }
+    .article-body { padding: 40px 48px 64px; max-width: 740px; margin: 0 auto; font-size: 15px; color: #4A4A48; line-height: 1.8; }
+    .article-body h2 { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 400; color: #1A1A18; letter-spacing: -0.02em; margin: 40px 0 14px; }
+    .article-body h3 { font-family: 'Fraunces', serif; font-size: 19px; font-weight: 400; color: #1A1A18; margin: 28px 0 10px; }
+    .article-body p { margin-bottom: 18px; }
+    .article-body p:last-child { margin-bottom: 0; }
+    .article-body ul { margin: 0 0 18px 20px; }
+    .article-body ul li { margin-bottom: 8px; }
+    .article-body a { color: #2D6A4F; text-decoration: none; }
+    .article-body strong { color: #1A1A18; font-weight: 500; }
+    .article-callout { background: #F2EFE8; border-left: 2px solid #2D6A4F; padding: 16px 20px; margin: 28px 0; font-size: 14px; color: #2D6A4F; line-height: 1.6; background-image: radial-gradient(rgba(26,26,24,0.04) 1px, transparent 1px); background-size: 20px 20px; }
+    .article-callout strong { color: #2D6A4F; }
+    .floating-ribbon { position: fixed; bottom: 0; left: 0; right: 0; background: #2D6A4F; padding: 12px 48px; display: flex; align-items: center; justify-content: space-between; z-index: 100; box-shadow: 0 -2px 12px rgba(0,0,0,0.12); transition: transform 0.2s ease; }
+    .floating-ribbon.hidden { transform: translateY(100%); }
+    .ribbon-text { font-size: 13px; color: rgba(249,247,244,0.8); }
+    .ribbon-text strong { color: #F9F7F4; font-weight: 500; }
+    .ribbon-contacts { display: flex; gap: 24px; align-items: center; }
+    .ribbon-contacts a { font-family: 'Fraunces', serif; font-size: 15px; color: #F9F7F4; text-decoration: none; }
+    .ribbon-divider { width: 0.5px; height: 20px; background: rgba(249,247,244,0.2); }
+    .ribbon-dismiss { background: none; border: none; color: rgba(249,247,244,0.4); font-size: 20px; cursor: pointer; padding: 0 0 0 20px; line-height: 1; }
+    body { padding-bottom: 60px; }
+    @media (max-width: 768px) {
+      .article-header, .article-body { padding-left: 24px; padding-right: 24px; }
+      .article-header h1 { font-size: 28px; }
+      .floating-ribbon { padding: 12px 20px; flex-wrap: wrap; gap: 8px; }
+      .ribbon-text { font-size: 12px; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div>
+    <div class="nav-logo">keep</div>
+    <div class="nav-sub">by Conflux Real Estate</div>
+  </div>
+  <div class="nav-links">
+    <a href="../../#how">How it works</a>
+    <a href="../../faq/">FAQ</a>
+    <a href="tel:6029356585" class="nav-cta">Call us →</a>
+  </div>
+</nav>
+
+<div class="article-header">
+  <div class="article-meta">
+    <span class="topic-tag">{{TOPIC_LABEL}}</span>
+  </div>
+  <h1>{{TITLE}}</h1>
+  <p class="article-deck">{{DESCRIPTION}}</p>
+</div>
+
+<hr class="article-divider">
+
+<div class="article-body">
+  {{ARTICLE_BODY}}
+</div>
+
+<section class="cta-section">
+  <h2>Found a community?<br><em>Call us first.</em></h2>
+  <p class="cta-sub">No forms. No scheduling links. Call or text Sagar directly.</p>
+  <div class="contact-block">
+    <div>
+      <div class="contact-item"><a href="tel:6029356585">602-935-6585</a></div>
+      <div class="contact-name"><a href="tel:6029356585">call</a> or <a href="sms:6029356585">text</a> · Sagar Patel</div>
+    </div>
+    <div>
+      <div class="contact-item"><a href="#" data-email data-email-show>sagar@buywithkeep.com</a></div>
+      <div class="contact-name">we reply fast</div>
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  <p>keep is a service of Conflux Real Estate, LLC — Licensed Arizona Real Estate Brokerage. &nbsp;<a href="../../faq/">FAQ →</a> &nbsp;<a href="../../#how">How keep works →</a></p>
+</div>
+
+<div class="floating-ribbon" id="ribbon">
+  <div class="ribbon-text"><strong>Buying new construction in Phoenix?</strong> Contact keep before your first visit.</div>
+  <div class="ribbon-contacts">
+    <a href="tel:6029356585">602-935-6585</a>
+    <div class="ribbon-divider"></div>
+    <a href="sms:6029356585">text us</a>
+    <div class="ribbon-divider"></div>
+    <a href="#" data-email>email</a>
+  </div>
+  <button class="ribbon-dismiss" onclick="document.getElementById('ribbon').classList.add('hidden')" aria-label="Dismiss">×</button>
+</div>
+
+<script src="../../assets/js/email.js"></script>
+<script>
+  var ribbon = document.getElementById('ribbon');
+  var footerCta = document.querySelector('.cta-section');
+  if (ribbon && footerCta) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          ribbon.classList.add('hidden');
+        } else {
+          ribbon.classList.remove('hidden');
+        }
+      });
+    }, { threshold: 0.1 });
+    observer.observe(footerCta);
+  }
+</script>
+</body>
+</html>

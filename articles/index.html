@@ -3,63 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Articles &amp; guides | keep</title>
-  <meta name="description" content="Guides and articles for Phoenix new home buyers — how to protect your rebate, understand your contract, and navigate new construction.">
+  <title>Articles & Guides — Phoenix New Home Buyers | keep</title>
+  <meta name="description" content="Practical information for Phoenix new home buyers — from how registration works to understanding your contract and buyer's commission rebate.">
   <link rel="canonical" href="https://buywithkeep.com/articles/">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/article.css">
+  <style>
+    .index-header { padding: 56px 48px 40px; max-width: 720px; }
+    .index-header h1 { font-family: 'Fraunces', serif; font-size: 40px; font-weight: 400; letter-spacing: -0.03em; color: #1A1A18; margin-bottom: 12px; }
+    .index-header p { font-size: 15px; color: #6A6A68; line-height: 1.6; }
+    .topic-filters { padding: 0 48px 28px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .filter-pill { font-size: 12px; color: #6A6A68; border: 0.5px solid rgba(26,26,24,0.15); padding: 5px 14px; cursor: pointer; border-radius: 3px; background: transparent; font-family: 'DM Sans', sans-serif; }
+    .filter-pill.active { background: #2D6A4F; color: #F9F7F4; border-color: #2D6A4F; }
+    .filter-pill:hover:not(.active) { border-color: #2D6A4F; color: #2D6A4F; }
+    .article-list { padding: 0 48px 64px; max-width: 700px; }
+    .article-list-item { padding: 18px 0; border-bottom: 0.5px solid rgba(26,26,24,0.08); }
+    .article-list-item:last-child { border-bottom: none; }
+    .article-list-topic { font-size: 11px; color: #8A8880; margin-bottom: 5px; letter-spacing: 0.04em; text-transform: uppercase; }
+    .article-list-title a { font-family: 'Fraunces', serif; font-size: 18px; font-weight: 400; color: #1A1A18; text-decoration: none; letter-spacing: -0.01em; line-height: 1.3; display: block; }
+    .article-list-title a:hover { color: #2D6A4F; }
+    .article-list-item.hidden { display: none; }
+    @media (max-width: 768px) {
+      .index-header { padding: 40px 24px 28px; }
+      .topic-filters { padding: 0 24px 20px; }
+      .article-list { padding: 0 24px 48px; }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="nav">
-    <a href="../" class="nav-brand">
-      <span class="nav-logo">keep</span>
-      <span class="nav-sub">by Conflux Real Estate</span>
-    </a>
-    <ul class="nav-links">
-      <li class="hide-mobile"><a href="../">How it works</a></li>
-      <li class="hide-mobile"><a href="../#calc">Calculator</a></li>
-      <li><a href="tel:6029356585" class="btn-call">Call us →</a></li>
-    </ul>
-  </nav>
+<nav class="nav">
+  <div>
+    <div class="nav-logo">keep</div>
+    <div class="nav-sub">by Conflux Real Estate</div>
+  </div>
+  <div class="nav-links">
+    <a href="../#how">How it works</a>
+    <a href="../faq/">FAQ</a>
+    <a href="tel:6029356585" class="nav-cta">Call us →</a>
+  </div>
+</nav>
 
-  <section style="padding: 60px 24px 80px;">
-    <div class="container">
-      <h1 style="font-size:40px; margin-bottom:12px;">Articles &amp; guides.</h1>
-      <p style="font-size:15px; color:var(--text-muted); margin-bottom:40px;">Guides for Phoenix new home buyers — registration, rebates, contracts, and more.</p>
+<div class="index-header">
+  <h1>Articles &amp; guides.</h1>
+  <p>Practical information for Phoenix new home buyers — from how registration works to understanding your contract.</p>
+</div>
 
-      <div class="article-filter-pills">
-        <button class="filter-pill active" onclick="filterArticles('all', this)">All</button>
-        <button class="filter-pill" onclick="filterArticles('registration', this)">Registration</button>
-        <button class="filter-pill" onclick="filterArticles('rebate', this)">The rebate</button>
-        <button class="filter-pill" onclick="filterArticles('how-keep-works', this)">How keep works</button>
-        <button class="filter-pill" onclick="filterArticles('builder-guides', this)">Builder guides</button>
-        <button class="filter-pill" onclick="filterArticles('financing', this)">Financing</button>
-        <button class="filter-pill" onclick="filterArticles('phoenix-market', this)">Phoenix market</button>
-      </div>
+<div class="topic-filters">
+  <button class="filter-pill active" onclick="filterArticles('all', this)">All</button>
+  <button class="filter-pill" onclick="filterArticles('registration', this)">Registration</button>
+  <button class="filter-pill" onclick="filterArticles('rebate', this)">The rebate</button>
+  <button class="filter-pill" onclick="filterArticles('how-keep-works', this)">How keep works</button>
+  <button class="filter-pill" onclick="filterArticles('builder-guides', this)">Builder guides</button>
+  <button class="filter-pill" onclick="filterArticles('financing', this)">Financing</button>
+  <button class="filter-pill" onclick="filterArticles('phoenix-market', this)">Phoenix market</button>
+</div>
 
-      <ul class="article-list">
-      <li class="article-list-item" data-topic="registration">
-        <div class="article-topic-label">Registration</div>
-        <a href="broker-registration-before-visit/">Why you need to contact your broker before visiting a new home community</a>
-      </li>
-      </ul>
-    </div>
-  </section>
+<div class="article-list" id="article-list">
+  <!-- Articles injected by build-articles.js -->
+  {{ARTICLE_LIST}}
+</div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <span>© 2026 Conflux Real Estate, LLC. Licensed Arizona Real Estate Brokerage. All rights reserved.</span>
-      <div class="footer-links">
-        <a href="../faq/">FAQ</a>
-        <a href="../">How keep works</a>
-      </div>
-    </div>
-  </footer>
+<div class="footer">
+  <p>keep is a service of Conflux Real Estate, LLC — Licensed Arizona Real Estate Brokerage. &nbsp;<a href="../faq/">FAQ →</a> &nbsp;<a href="../#how">How keep works →</a></p>
+</div>
 
-  <script src="../assets/js/article-filter.js"></script>
+<script src="../assets/js/article-filter.js"></script>
 </body>
 </html>
