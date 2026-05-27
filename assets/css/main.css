@@ -89,6 +89,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--t
 .calc-inner {
   max-width: 580px;
   margin: 0 auto;
+  width: 100%;
 }
 .section-label { font-size: 11px; letter-spacing: 0.1em; color: var(--text-subtle); text-transform: uppercase; margin-bottom: 28px; }
 .slider-row { margin-bottom: 28px; }
