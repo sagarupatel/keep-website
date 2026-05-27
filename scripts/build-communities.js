@@ -83,8 +83,8 @@ function renderPage(row) {
   <meta name="description" content="Buying at ${row.community_name} by ${row.builder} in ${row.location}? keep gives back up to 2/3 of the buyer's commission at closing. Call before your first visit.">
   <link rel="canonical" href="https://buywithkeep.com/communities/${slug}/">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/community.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/community.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -101,13 +101,13 @@ function renderPage(row) {
 
   <!-- Nav -->
   <nav class="nav">
-    <a href="/" class="nav-brand">
+    <a href="../../" class="nav-brand">
       <span class="nav-logo">keep</span>
       <span class="nav-sub">by Conflux Real Estate</span>
     </a>
     <ul class="nav-links">
-      <li class="hide-mobile"><a href="/#how">How keep works</a></li>
-      <li class="hide-mobile"><a href="/faq/">FAQ</a></li>
+      <li class="hide-mobile"><a href="../../#how">How keep works</a></li>
+      <li class="hide-mobile"><a href="../../faq/">FAQ</a></li>
       <li><a href="tel:6029356585" class="btn-call">Call us →</a></li>
     </ul>
   </nav>
@@ -206,14 +206,14 @@ function renderPage(row) {
     <div class="footer-inner">
       <span>© 2026 Conflux Real Estate, LLC. Licensed Arizona Real Estate Brokerage. All rights reserved.</span>
       <div class="footer-links">
-        <a href="/faq/">FAQ</a>
-        <a href="/#how">How keep works</a>
+        <a href="../../faq/">FAQ</a>
+        <a href="../../#how">How keep works</a>
       </div>
     </div>
   </footer>
 
-  <script src="/assets/js/calculator.js"></script>
-  <script src="/assets/js/email.js"></script>
+  <script src="../../assets/js/calculator.js"></script>
+  <script src="../../assets/js/email.js"></script>
 </body>
 </html>`;
 }

@@ -78,8 +78,8 @@ function renderArticlePage(meta, bodyHtml) {
   <meta name="description" content="${meta.description}">
   <link rel="canonical" href="https://buywithkeep.com/articles/${meta.slug}/">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/article.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,13 +110,13 @@ function renderArticlePage(meta, bodyHtml) {
 
   <!-- Nav -->
   <nav class="nav">
-    <a href="/" class="nav-brand">
+    <a href="../../" class="nav-brand">
       <span class="nav-logo">keep</span>
       <span class="nav-sub">by Conflux Real Estate</span>
     </a>
     <ul class="nav-links">
-      <li class="hide-mobile"><a href="/">How it works</a></li>
-      <li class="hide-mobile"><a href="/#calc">Calculator</a></li>
+      <li class="hide-mobile"><a href="../../">How it works</a></li>
+      <li class="hide-mobile"><a href="../../#calc">Calculator</a></li>
       <li><a href="tel:6029356585" class="btn-call">Call us →</a></li>
     </ul>
   </nav>
@@ -161,13 +161,13 @@ function renderArticlePage(meta, bodyHtml) {
     <div class="footer-inner">
       <span>© 2026 Conflux Real Estate, LLC. Licensed Arizona Real Estate Brokerage. All rights reserved.</span>
       <div class="footer-links">
-        <a href="/faq/">FAQ</a>
-        <a href="/">How keep works</a>
+        <a href="../../faq/">FAQ</a>
+        <a href="../../">How keep works</a>
       </div>
     </div>
   </footer>
 
-  <script src="/assets/js/email.js"></script>
+  <script src="../../assets/js/email.js"></script>
   <script>
     // Floating ribbon — dismiss and IntersectionObserver
     (function() {
@@ -227,7 +227,7 @@ function renderIndexPage(articles) {
     const label = TOPIC_LABELS[a.topic] || a.topic || '';
     return `      <li class="article-list-item" data-topic="${a.topic}">
         <div class="article-topic-label">${label}</div>
-        <a href="/articles/${a.slug}/">${a.title}</a>
+        <a href="${a.slug}/">${a.title}</a>
       </li>`;
   }).join('\n');
 
@@ -240,20 +240,20 @@ function renderIndexPage(articles) {
   <meta name="description" content="Guides and articles for Phoenix new home buyers — how to protect your rebate, understand your contract, and navigate new construction.">
   <link rel="canonical" href="https://buywithkeep.com/articles/">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/article.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
 </head>
 <body>
 
   <!-- Nav -->
   <nav class="nav">
-    <a href="/" class="nav-brand">
+    <a href="../" class="nav-brand">
       <span class="nav-logo">keep</span>
       <span class="nav-sub">by Conflux Real Estate</span>
     </a>
     <ul class="nav-links">
-      <li class="hide-mobile"><a href="/">How it works</a></li>
-      <li class="hide-mobile"><a href="/#calc">Calculator</a></li>
+      <li class="hide-mobile"><a href="../">How it works</a></li>
+      <li class="hide-mobile"><a href="../#calc">Calculator</a></li>
       <li><a href="tel:6029356585" class="btn-call">Call us →</a></li>
     </ul>
   </nav>
@@ -278,13 +278,13 @@ ${items}
     <div class="footer-inner">
       <span>© 2026 Conflux Real Estate, LLC. Licensed Arizona Real Estate Brokerage. All rights reserved.</span>
       <div class="footer-links">
-        <a href="/faq/">FAQ</a>
-        <a href="/">How keep works</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../">How keep works</a>
       </div>
     </div>
   </footer>
 
-  <script src="/assets/js/article-filter.js"></script>
+  <script src="../assets/js/article-filter.js"></script>
 </body>
 </html>`;
 }
