@@ -1,0 +1,119 @@
+/* Community landing page styles */
+
+.community-header {
+  padding: 60px 24px 48px;
+  border-bottom: 0.5px solid var(--border);
+}
+.community-header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.community-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.community-builder-loc {
+  font-size: 13px;
+  color: var(--text-subtle);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.community-h1 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+.community-subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+.community-value-prop {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 560px;
+}
+
+/* Registration block */
+.registration-block {
+  padding: 48px 24px;
+  border-bottom: 0.5px solid var(--border);
+}
+.registration-block-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.registration-block h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.registration-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.registration-row {
+  display: flex;
+  gap: 16px;
+}
+.registration-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  min-width: 100px;
+  padding-top: 2px;
+}
+
+/* What is keep section */
+.what-keep {
+  padding: 60px 24px;
+  border-bottom: 0.5px solid var(--border);
+}
+.what-keep-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.what-keep h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.what-keep p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+.what-keep .disclosure {
+  font-size: 12px;
+  color: var(--text-subtle);
+  margin-top: 16px;
+}
+
+/* Builder link */
+.builder-link-section {
+  padding: 32px 24px;
+  border-bottom: 0.5px solid var(--border);
+}
+.builder-link-section-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.builder-link-section a {
+  font-size: 14px;
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 500;
+}
+.builder-link-section a:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .community-h1 { font-size: 32px; }
+}

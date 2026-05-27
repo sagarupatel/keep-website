@@ -1,0 +1,11 @@
+{
+  "name": "keep-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-communities.js && node scripts/build-articles.js && node scripts/build-sitemap.js",
+    "build:communities": "node scripts/build-communities.js",
+    "build:articles": "node scripts/build-articles.js",
+    "build:sitemap": "node scripts/build-sitemap.js"
+  }
+}
