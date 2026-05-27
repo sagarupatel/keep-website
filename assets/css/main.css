@@ -86,9 +86,12 @@ body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--t
   border-bottom: 0.5px solid var(--border-subtle);
   padding: clamp(40px, 6vw, 72px) var(--pad);
 }
+.calc-section-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
 .calc-inner {
   max-width: 580px;
-  margin: 0 auto;
   width: 100%;
 }
 .section-label { font-size: 11px; letter-spacing: 0.1em; color: var(--text-subtle); text-transform: uppercase; margin-bottom: 28px; }
