@@ -56,12 +56,10 @@ body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--t
 
 /* ── HERO ── */
 .hero {
-  padding: clamp(48px, 8vw, 88px) 0 clamp(40px, 6vw, 64px);
-}
-.hero-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 var(--pad);
+  padding: clamp(48px, 8vw, 88px) var(--pad) clamp(40px, 6vw, 64px);
+  text-align: left;
 }
 .hero h1 {
   font-family: 'Fraunces', serif;
@@ -294,7 +292,8 @@ input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px;
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
-  .nav-links a:not(.nav-cta) { display: none; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 12px; }
   .steps { grid-template-columns: 1fr; gap: 32px; }
   .trust-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
   .trust-divider { width: 100%; height: 0.5px; align-self: auto; }
@@ -302,6 +301,7 @@ input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px;
   .contact-block { flex-direction: column; gap: 20px; }
   .cta-strip-inner { flex-direction: column; align-items: flex-start; }
   .cta-strip-contacts { flex-direction: column; gap: 16px; }
+  .cta-contact-label { white-space: normal; }
   .faq-body { grid-template-columns: 1fr; }
   .faq-nav { display: none; }
   .floating-ribbon { flex-wrap: wrap; gap: 8px; }
