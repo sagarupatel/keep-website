@@ -7,5 +7,23 @@
     "build:communities": "node scripts/build-communities.js",
     "build:articles": "node scripts/build-articles.js",
     "build:sitemap": "node scripts/build-sitemap.js"
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagarupatel/keep-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sagarupatel/keep-website/issues"
+  },
+  "homepage": "https://github.com/sagarupatel/keep-website#readme",
+  "dependencies": {
+    "csv-parse": "^6.2.1",
+    "marked": "^18.0.5"
   }
 }
