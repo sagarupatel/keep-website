@@ -39,8 +39,8 @@ function regWarn(policy, notes, builder) {
 function builderLink(builderUrl, builder, communityName) {
   if (!builderUrl || builderUrl.trim() === '') return '';
   return `
-<div class="builder-link-block">
-  <div class="builder-link-block-inner">
+<div class="builder-link">
+  <div class="wrap">
     <a href="${builderUrl}" target="_blank" rel="noopener">&nearr; View ${communityName} on ${builder}'s website</a>
   </div>
 </div>`;
