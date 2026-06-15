@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{COMMUNITY_NAME}} — Get Cash Back at Closing | keep</title>
-  <meta name="description" content="Buying at {{COMMUNITY_NAME}} by {{BUILDER}} in {{LOCATION}}? keep gives back up to 2/3 of the buyer's commission at closing. Call before your first visit.">
+  <title>{{META_TITLE}}</title>
+  <meta name="description" content="{{META_DESC}}">
   <link rel="canonical" href="https://buywithkeep.com/communities/{{SLUG}}/">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -80,7 +80,7 @@
           <span>Home price</span>
           <strong id="price-display">$650,000</strong>
         </div>
-        <input type="range" id="price-slider" min="300000" max="1500000" step="10000" value="650000">
+        <input type="range" id="price-slider" min="300000" max="{{SLIDER_MAX}}" step="{{SLIDER_STEP}}" value="{{START_PRICE}}">
       </div>
       <div class="comm-row">
         <label>Commission rate</label>
