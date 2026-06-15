@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.khov.com)",
+      "WebFetch(domain:www.beazer.com)",
+      "WebFetch(domain:www.cachethomes.net)",
+      "WebFetch(domain:mattamyhomes.com)",
+      "WebFetch(domain:www.pulte.com)",
+      "WebFetch(domain:www.drhorton.com)",
+      "WebFetch(domain:www.sheahomes.com)",
+      "WebFetch(domain:www.fultonhomes.com)",
+      "WebFetch(domain:camelothomes.com)",
+      "WebFetch(domain:www.lennar.com)",
+      "WebFetch(domain:www.richmondamerican.com)",
+      "WebFetch(domain:www.taylormorrison.com)",
+      "WebFetch(domain:www.tollbrothers.com)",
+      "WebFetch(domain:www.porchlighthomes.com)",
+      "WebFetch(domain:risewellhomes.com)",
+      "WebFetch(domain:www.starlighthomes.com)",
+      "WebFetch(domain:www.kbhome.com)",
+      "WebFetch(domain:www.davidweekleyhomes.com)",
+      "WebFetch(domain:www.ashtonwoods.com)",
+      "WebFetch(domain:www.meritagehomes.com)",
+      "WebFetch(domain:www.williamryanhomes.com)",
+      "WebFetch(domain:tjh.com)",
+      "WebFetch(domain:www.woodsidehomes.com)",
+      "WebFetch(domain:www.tripointehomes.com)",
+      "WebSearch",
+      "WebFetch(domain:www.newhomesource.com)"
+    ]
+  }
+}
