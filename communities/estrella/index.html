@@ -20,7 +20,7 @@
     .value-prop { font-size: 15px; color: var(--text); margin-bottom: 24px; line-height: 1.5; }
     .value-prop em { color: var(--green); font-style: normal; font-weight: 500; }
     .status-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 500; background: #EAF3DE; color: #27500A; padding: 4px 10px; border-radius: 3px; margin-bottom: 28px; letter-spacing: 0.02em; }
-    .rebate-hero { background: var(--bg-calc); border: 0.5px solid var(--border-subtle); padding: 32px 36px; background-image: radial-gradient(rgba(26,26,24,0.06) 1px,transparent 1px); background-size: 24px 24px; margin-bottom: 0; width: 100%; }
+    .rebate-eyebrow { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-subtle); margin-bottom: 16px; }
     .rebate-eyebrow { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-subtle); margin-bottom: 16px; }
     .rebate-number { font-family: 'Fraunces', serif; font-size: clamp(48px,6vw,72px); font-weight: 400; color: var(--green); letter-spacing: -0.04em; line-height: 1; }
     .rebate-sub { font-size: 13px; color: var(--text-subtle); margin-top: 6px; margin-bottom: 24px; }
@@ -35,7 +35,7 @@
     .reg-warn { font-size: 13px; color: var(--green); padding: 12px 14px; border-left: 2px solid var(--green); line-height: 1.65; }
     .reg-warn a { color: var(--green); text-decoration: none; }
     .builder-link { padding: clamp(16px,2vw,24px) 0; border-bottom: 0.5px solid var(--border-subtle); }
-    .builder-link a { font-size: 13px; font-weight: 500; color: var(--green); text-decoration: none; }
+    .builder-link a { font-size: 13px; font-weight: 500; color: #B84A1C; text-decoration: none; }
     .builder-link a:hover { opacity: 0.8; }
   </style>
 </head>
@@ -62,7 +62,13 @@
     <div class="community-loc">$380K–$560K &middot; 3.0% buyer's commission</div>
     <div class="value-prop">Use keep as your buyer's broker and <em>get cash back at closing</em>, at no cost to you.</div>
     <div class="status-badge">&#9679; Active &mdash; accepting registrations</div>
-    <div class="rebate-hero">
+    </div>
+  </div>
+</div>
+
+<section class="calc-section">
+  <div class="calc-frame">
+    <div class="calc-box">
       <div class="rebate-eyebrow">Your estimated rebate at Estrella</div>
       <div class="rebate-number" id="rebate-display">$0</div>
       <div class="rebate-sub" id="rebate-sub">credited to you at closing</div>
@@ -84,24 +90,18 @@
       <div class="math-line" id="math-line"></div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="cta-strip">
-  <div class="cta-strip-inner">
-    <div class="cta-strip-text">
-      <strong>Contact us before your first visit.</strong>
-      <span>Registration protects your rebate. One call is all it takes.</span>
-    </div>
-    <div class="cta-strip-contacts">
-      <div class="cta-contact">
-        <a href="tel:6029356585">602-935-6585</a>
-        <div class="cta-contact-label"><a href="tel:6029356585">call</a> or <a href="sms:6029356585">text</a> &middot; Sagar Patel</div>
-      </div>
-      <div class="cta-contact">
-        <a href="#" data-email data-email-show>sagar@buywithkeep.com</a>
-        <div class="cta-contact-label">we reply fast</div>
-      </div>
-    </div>
+<div style="background:#2D6A4F;padding:20px 40px;">
+  <div style="font-family:'Fraunces',serif;font-size:20px;font-weight:400;color:#F9F7F4;margin-bottom:3px;">Contact us before your first visit.</div>
+  <div style="font-size:13px;color:rgba(249,247,244,0.65);margin-bottom:14px;">Registration protects your rebate. One call is all it takes.</div>
+  <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px;">
+    <a href="tel:6029356585" style="font-family:'Fraunces',serif;font-size:17px;color:#F9F7F4;text-decoration:none;white-space:nowrap;">602-935-6585</a>
+    <span style="font-size:11px;color:rgba(249,247,244,0.45);white-space:nowrap;"><a href="tel:6029356585" style="color:rgba(249,247,244,0.45);text-decoration:none;">call</a> or <a href="sms:6029356585" style="color:rgba(249,247,244,0.45);text-decoration:none;">text</a> &middot; Sagar Patel</span>
+  </div>
+  <div style="display:flex;align-items:baseline;gap:10px;">
+    <a href="#" data-email data-email-show style="font-family:'Fraunces',serif;font-size:17px;color:#F9F7F4;text-decoration:none;white-space:nowrap;">sagar@buywithkeep.com</a>
+    <span style="font-size:11px;color:rgba(249,247,244,0.45);white-space:nowrap;">we reply fast</span>
   </div>
 </div>
 
