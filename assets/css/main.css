@@ -158,7 +158,7 @@ input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px;
 .cta-strip-text span { font-size: 13px; color: rgba(249,247,244,0.65); }
 .cta-strip-contacts { display: flex; gap: 28px; flex-wrap: wrap; }
 .cta-contact { flex-shrink: 0; }
-.cta-contact a { font-family: 'Fraunces', serif; font-size: 17px; color: var(--bg); text-decoration: none; display: block; white-space: nowrap; }
+.cta-contact > a { font-family: 'Fraunces', serif; font-size: 17px; color: var(--bg); text-decoration: none; display: block; white-space: nowrap; }
 .cta-contact-label { font-size: 11px; color: rgba(249,247,244,0.45); margin-top: 2px; white-space: nowrap; }
 .cta-contact-label a { font-family: 'DM Sans', sans-serif; font-size: 11px; color: rgba(249,247,244,0.45); text-decoration: none; }
 
