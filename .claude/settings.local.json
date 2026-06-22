@@ -26,7 +26,11 @@
       "WebFetch(domain:www.woodsidehomes.com)",
       "WebFetch(domain:www.tripointehomes.com)",
       "WebSearch",
-      "WebFetch(domain:www.newhomesource.com)"
+      "WebFetch(domain:www.newhomesource.com)",
+      "PowerShell(python --version)",
+      "PowerShell(pip show datasette 2>$null)",
+      "PowerShell(pip show pandas 2>$null)",
+      "PowerShell($env:PYTHONIOENCODING = \"utf-8\"; python \"C:\\\\Users\\\\sagar\\\\propertybase-archive\\\\query_check.py\" 2>&1)"
     ]
   }
 }
